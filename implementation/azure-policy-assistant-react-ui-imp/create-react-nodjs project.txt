@@ -1,0 +1,18 @@
+------------------------------------
+  Create Node.js TypeScript Project - (PowerShell Terminal)
+------------------------------------
+
+1. PS C:\Users\Steven\GitHub-Repositories\Repositories> npm create vite@latest react-dev-products-table -- --template react-ts
+
+PS C:\Users\Steven\GitHub-Repositories\Repositories> npm create vite@latest <react folder name> -- --template react-ts
+
+
+2. PS C:\Users\Steven\GitHub-Repositories\Repositories> cd react-dev-products-table
+
+PS C:\Users\Steven\GitHub-Repositories\Repositories> cd <folder name>
+
+
+3. PS C:\Users\Steven\GitHub-Repositories\Repositories\react-dev-products-table> npm install
+
+
+4. PS C:\Users\Steven\GitHub-Repositories\Repositories\react-dev-products-table> npm run dev

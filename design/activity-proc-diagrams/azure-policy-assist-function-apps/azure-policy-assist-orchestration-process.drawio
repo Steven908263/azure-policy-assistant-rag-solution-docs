@@ -1,0 +1,251 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="4sAQG1Obsfr-3msD65Ts">
+    <mxGraphModel dx="1247" dy="1665" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oWoHSDsF8jiuET87BSSj-5" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;horizontal=0;horizontalStack=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Pool" vertex="1">
+          <mxGeometry height="690" width="185" x="130" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-6" parent="oWoHSDsF8jiuET87BSSj-5" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Policy Assistant &#xa;Chat UI" vertex="1">
+          <mxGeometry height="690" width="165" x="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-12" edge="1" parent="oWoHSDsF8jiuET87BSSj-6" source="oWoHSDsF8jiuET87BSSj-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="oWoHSDsF8jiuET87BSSj-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-10" parent="oWoHSDsF8jiuET87BSSj-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Employee enters Policy Question into chat prompt" vertex="1">
+          <mxGeometry height="60" width="95" x="32.5" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-11" parent="oWoHSDsF8jiuET87BSSj-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Employee clicks Send Chat button" vertex="1">
+          <mxGeometry height="60" width="92.5" x="33.75" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-12" parent="oWoHSDsF8jiuET87BSSj-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Policy Assistant UI sends Chat question &amp;amp; conversation ID to Policy Assistant Orchestrator service&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="120" x="20" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-13" edge="1" parent="oWoHSDsF8jiuET87BSSj-6" source="oWoHSDsF8jiuET87BSSj-11" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="190" as="sourcePoint" />
+            <mxPoint x="150" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-67" parent="oWoHSDsF8jiuET87BSSj-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Receive, process, and desplay Policy LLM response" vertex="1">
+          <mxGeometry height="70" width="95" x="35" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-6" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Foundry Embeddings &#xa;Model" vertex="1">
+          <mxGeometry height="690" width="170" x="655" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-28" parent="ar61peTjqGrFAmp6c3ug-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive &amp;amp; process Chat Question" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-29" parent="ar61peTjqGrFAmp6c3ug-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Convert Question text chunks into Vector chunks" vertex="1">
+          <mxGeometry height="60" width="101.25" x="34.38" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-30" parent="ar61peTjqGrFAmp6c3ug-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Vector Query Request to Vector Index" vertex="1">
+          <mxGeometry height="60" width="92.5" x="36.75" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-31" edge="1" parent="ar61peTjqGrFAmp6c3ug-6" source="ar61peTjqGrFAmp6c3ug-28" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="100" as="sourcePoint" />
+            <mxPoint x="160" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-32" edge="1" parent="ar61peTjqGrFAmp6c3ug-6" source="ar61peTjqGrFAmp6c3ug-29" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" target="ar61peTjqGrFAmp6c3ug-30" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-39" parent="ar61peTjqGrFAmp6c3ug-6" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive, process, &amp;amp; send Chat Response to AI Search" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-43" edge="1" parent="ar61peTjqGrFAmp6c3ug-6" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#e70853, #ff73b1);" target="ar61peTjqGrFAmp6c3ug-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="280" />
+              <mxPoint x="130" y="70" />
+            </Array>
+            <mxPoint x="130" y="280" as="sourcePoint" />
+            <mxPoint x="180" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Employee" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="-710" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-16" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Foundry AI Search &#xa;Vector Index" vertex="1">
+          <mxGeometry height="690" width="200" x="825" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-34" parent="ar61peTjqGrFAmp6c3ug-16" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive Chat Question" vertex="1">
+          <mxGeometry height="60" width="92.5" x="53.75" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-35" parent="ar61peTjqGrFAmp6c3ug-16" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Query Vector Index based on Chat Question" vertex="1">
+          <mxGeometry height="60" width="116.25" x="41.88" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-36" parent="ar61peTjqGrFAmp6c3ug-16" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Vector Query Response to Embeddings Model" vertex="1">
+          <mxGeometry height="70" width="96.25" x="51.75" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-37" edge="1" parent="ar61peTjqGrFAmp6c3ug-16" source="ar61peTjqGrFAmp6c3ug-34" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" target="ar61peTjqGrFAmp6c3ug-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="70" as="sourcePoint" />
+            <mxPoint x="300" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-38" edge="1" parent="ar61peTjqGrFAmp6c3ug-16" source="ar61peTjqGrFAmp6c3ug-35" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="180" as="sourcePoint" />
+            <mxPoint x="210" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-40" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-39" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="870" y="-384" as="sourcePoint" />
+            <mxPoint x="850" y="-445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-42" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-48" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="690" y="-385" as="sourcePoint" />
+            <mxPoint x="630" y="-381" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-50" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="LLM - &#xa;(ChatGPT)" vertex="1">
+          <mxGeometry height="690" width="200" x="1025" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-56" parent="ar61peTjqGrFAmp6c3ug-50" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Recieve and process Query Response &amp;amp; Policy Question&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="95" x="60" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-57" parent="ar61peTjqGrFAmp6c3ug-50" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Return LLM Response to&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="95" x="60" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-64" edge="1" parent="ar61peTjqGrFAmp6c3ug-50" source="ar61peTjqGrFAmp6c3ug-56" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-57" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="235" y="540" as="sourcePoint" />
+            <mxPoint x="285" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-8" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Policy Assistant &#xa;Foundry AI Search" vertex="1">
+          <mxGeometry height="690" width="170" x="485" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-22" parent="oWoHSDsF8jiuET87BSSj-8" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive &amp;amp; process Chat Question" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-24" parent="oWoHSDsF8jiuET87BSSj-8" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Convert Question into Text Chunks" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-25" parent="oWoHSDsF8jiuET87BSSj-8" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Policy Question to Embeddings Model" vertex="1">
+          <mxGeometry height="70" width="95" x="37" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-26" edge="1" parent="oWoHSDsF8jiuET87BSSj-8" source="ar61peTjqGrFAmp6c3ug-22" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="170" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-27" edge="1" parent="oWoHSDsF8jiuET87BSSj-8" source="ar61peTjqGrFAmp6c3ug-24" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-25" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="180" y="190" as="sourcePoint" />
+            <mxPoint x="230" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-41" parent="oWoHSDsF8jiuET87BSSj-8" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive, process &amp;amp; send Chat Response" vertex="1">
+          <mxGeometry height="70" width="105.12" x="32.44" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-60" edge="1" parent="oWoHSDsF8jiuET87BSSj-8" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="290" />
+              <mxPoint x="135" y="110" />
+            </Array>
+            <mxPoint x="135" y="280" as="sourcePoint" />
+            <mxPoint x="185" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oWoHSDsF8jiuET87BSSj-7" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=0" value="Policy Assistant &#xa;Ochestration Service" vertex="1">
+          <mxGeometry height="690" width="170" x="315" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-14" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive Chat Question &amp;amp; Conversation ID&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-17" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Create Policy Assistant AI Search query" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-18" edge="1" parent="oWoHSDsF8jiuET87BSSj-7" source="ar61peTjqGrFAmp6c3ug-14" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="110" as="sourcePoint" />
+            <mxPoint x="180" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-19" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Policy Question to Foudry AI Search Svc" vertex="1">
+          <mxGeometry height="60" width="92.5" x="38.75" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-20" edge="1" parent="oWoHSDsF8jiuET87BSSj-7" source="ar61peTjqGrFAmp6c3ug-17" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="85" y="230" as="sourcePoint" />
+            <mxPoint x="140" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-48" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&amp;nbsp;Receive and process Chat Query Response" vertex="1">
+          <mxGeometry height="60" width="101.25" x="34.38" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-59" edge="1" parent="oWoHSDsF8jiuET87BSSj-7" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="290" />
+              <mxPoint x="135" y="90" />
+            </Array>
+            <mxPoint x="135" y="270" as="sourcePoint" />
+            <mxPoint x="175" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-52" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Policy Query Response and Chat Query to LLM" vertex="1">
+          <mxGeometry height="70" width="95" x="37.5" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-53" edge="1" parent="oWoHSDsF8jiuET87BSSj-7" source="ar61peTjqGrFAmp6c3ug-48" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-52" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="405" as="sourcePoint" />
+            <mxPoint x="320" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-65" parent="oWoHSDsF8jiuET87BSSj-7" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Send Policy Query Response and Chat Query to LLM" vertex="1">
+          <mxGeometry height="70" width="95" x="37.5" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-58" edge="1" parent="1" source="ar61peTjqGrFAmp6c3ug-12" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="-460" />
+              <mxPoint x="280" y="-700" />
+            </Array>
+            <mxPoint x="280" y="-470" as="sourcePoint" />
+            <mxPoint x="330" y="-520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-61" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" target="oWoHSDsF8jiuET87BSSj-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="-690" as="sourcePoint" />
+            <mxPoint x="130" y="-740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-63" edge="1" parent="1" source="ar61peTjqGrFAmp6c3ug-39" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="ar61peTjqGrFAmp6c3ug-41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-62" edge="1" parent="1" source="ar61peTjqGrFAmp6c3ug-52" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-56" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="-280" as="sourcePoint" />
+            <mxPoint x="660" y="-330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-66" edge="1" parent="1" source="ar61peTjqGrFAmp6c3ug-57" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ar61peTjqGrFAmp6c3ug-65" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1210" y="-160" as="sourcePoint" />
+            <mxPoint x="1010" y="-220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ar61peTjqGrFAmp6c3ug-68" edge="1" parent="1" source="ar61peTjqGrFAmp6c3ug-65" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ar61peTjqGrFAmp6c3ug-67" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="-170" as="sourcePoint" />
+            <mxPoint x="280" y="-290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

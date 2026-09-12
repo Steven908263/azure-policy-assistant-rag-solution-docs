@@ -1,0 +1,26 @@
+{
+  "@odata.context": "https://as-corp-policy-ai-rag-search-svc-dev.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DF0B73F59270DC\"",
+  "name": "index-policy-assist-ai-search-indexer",
+  "description": "Indexer for the Corporate Policy Assistant Azure AI Search RAG index.",
+  "dataSourceName": "rag-1785290794434-datasource",
+  "skillsetName": "as-corp-policy-ai-rag-skillset-v6",
+  "targetIndexName": "index-policy-assist-ai-search",
+  "disabled": null,
+  "schedule": {
+    "interval": "P1D",
+    "startTime": "2026-09-03T08:31:44.432Z"
+  },
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "configuration": {
+      "parsingMode": "default"
+    }
+  },
+  "fieldMappings": [],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

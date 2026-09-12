@@ -1,0 +1,131 @@
+{
+  "name": "as-corp-policy-ai-rag-skillset-v6",
+  "description": "Policy Assistant skillset for chunking, embeddings, metadata projection, and group-based security trimming.",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "name": "policy-text-split",
+      "description": "Split policy documents into token-based chunks.",
+      "context": "/document",
+      "defaultLanguageCode": "en",
+      "textSplitMode": "pages",
+      "unit": "azureOpenAITokens",
+      "azureOpenAITokenizerParameters": {
+        "encoderModelName": "cl100k_base"
+      },
+      "maximumPageLength": 1000,
+      "pageOverlapLength": 125,
+      "maximumPagesToTake": 123,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "textItems",
+          "targetName": "pages"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.AzureOpenAIEmbeddingSkill",
+      "name": "policy-openai-embedding",
+      "description": "Create 1536-dimension embeddings for each policy chunk.",
+      "context": "/document/pages/*",
+      "resourceUri": "https://rs-corp-policy-ai-rag-mf-dev.openai.azure.com",
+      "deploymentId": "text-embedding-3-small",
+      "modelName": "text-embedding-3-small",
+      "dimensions": 1536,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/pages/*"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "embedding",
+          "targetName": "text_vector"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Util.ShaperSkill",
+      "name": "security-metadata-to-collections",
+      "description": "Convert allowed_groups metadata into a string collection for Azure AI Search security trimming.",
+      "context": "/document",
+      "inputs": [
+        {
+          "name": "allowed_groups",
+          "source": "=[$(/document/allowed_groups)]"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "targetName": "security_metadata"
+        }
+      ]
+    }
+  ],
+  "indexProjections": {
+    "selectors": [
+      {
+        "targetIndexName": "index-policy-assist-ai-search-v2",
+        "parentKeyFieldName": "parent_id",
+        "sourceContext": "/document/pages/*",
+        "mappings": [
+          {
+            "name": "chunk",
+            "source": "/document/pages/*"
+          },
+          {
+            "name": "text_vector",
+            "source": "/document/pages/*/text_vector"
+          },
+          {
+            "name": "title",
+            "source": "/document/metadata_storage_name"
+          },
+          {
+            "name": "source_file",
+            "source": "/document/metadata_storage_name"
+          },
+          {
+            "name": "source_path",
+            "source": "/document/metadata_storage_path"
+          },
+          {
+            "name": "policy_name",
+            "source": "/document/policy_name"
+          },
+          {
+            "name": "policy_category",
+            "source": "/document/policy_category"
+          },
+          {
+            "name": "effective_date",
+            "source": "/document/effective_date"
+          },
+          {
+            "name": "last_modified",
+            "source": "/document/metadata_storage_last_modified"
+          },
+          {
+            "name": "policy_scope",
+            "source": "/document/policy_scope"
+          },
+          {
+            "name": "allowed_groups",
+            "source": "/document/security_metadata/allowed_groups"
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "projectionMode": "skipIndexingParentDocuments"
+    }
+  }
+}

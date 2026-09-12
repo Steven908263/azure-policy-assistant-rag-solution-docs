@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="zwMcgjrODnbbb5iaGX7W">
+    <mxGraphModel dx="1185" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2TjuvgG7Jurse1s7_etx-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Employee&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="190" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-2" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="" vertex="1">
+          <mxGeometry height="290" width="390" x="350" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="425" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-4" edge="1" parent="1" source="2TjuvgG7Jurse1s7_etx-1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2TjuvgG7Jurse1s7_etx-3" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="250" y="269.5" as="sourcePoint" />
+            <mxPoint x="420" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Legal&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="100" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;IT&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="280" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-12" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=12;fontStyle=0" value="HR" vertex="1">
+          <mxGeometry height="80" width="60" x="190" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-16" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Corporate Policy Documents&lt;div&gt;(Azure Blob Container)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="875" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Policy Response Generation&lt;div&gt;(LLM)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="70" x="870" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-20" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" target="2TjuvgG7Jurse1s7_etx-16" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="680" y="240" as="sourcePoint" />
+            <mxPoint x="820" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-21" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="680" y="300" as="sourcePoint" />
+            <mxPoint x="860" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;fontStyle=0" value="Corporate Policy AI Assistant" vertex="1">
+          <mxGeometry height="30" width="210" x="435" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-24" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="200" y="340" as="sourcePoint" />
+            <mxPoint x="140" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-25" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="220" y="340" as="sourcePoint" />
+            <mxPoint x="220" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-26" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="240" y="340" as="sourcePoint" />
+            <mxPoint x="300" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ability to query for policy information and receive relevant&amp;nbsp;policy query responses with associated policy citations." vertex="1">
+          <mxGeometry height="100.5" width="195" x="454" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="2TjuvgG7Jurse1s7_etx-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=17;fontStyle=1;labelBackgroundColor=default;" value="Corporate Policy AI Assistant - RAG User Query Pipeline" vertex="1">
+          <mxGeometry height="40" width="600" x="10" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

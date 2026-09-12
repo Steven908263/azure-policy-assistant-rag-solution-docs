@@ -1,0 +1,355 @@
+Testing Vector and Hybrid RetrievalAzure AI Search - Corporate Policy RAG
+
+Practical validation guide for keyword/BM25, vector, hybrid, and semantic retrieval
+
+Based on the supplied Azure AI Search result data, the index already contains text chunks, 
+document metadata, populated vector embeddings, and semantic-ranking output. The goal of this 
+phase is therefore to validate retrieval quality rather than rebuild the index.
+
+1. What This Test Is Proving
+
+Test the same representative policy question using multiple retrieval methods and compare which 
+source documents and chunks are returned.
+
+Test
+
+Retrieval Method
+
+Purpose
+
+1
+
+Keyword / BM25
+
+Tests exact terms, phrases, and 
+lexical matching.
+
+2
+
+Vector
+
+Tests semantic similarity and 
+meaning-based retrieval.
+
+3
+
+Hybrid
+
+Combines keyword and vector 
+retrieval.
+
+4
+
+Hybrid + Semantic Ranker
+
+Adds semantic reranking; 
+strongest candidate for the 
+RAG pipeline.
+
+
+
+Recommended target for the Corporate Policy Assistant: Hybrid Search + Semantic Ranker.
+
+2. Open Azure AI Search Search Explorer
+
+1.Open the Azure portal.
+
+
+2.Open the Azure AI Search service.
+
+
+3.Open Indexes.
+
+
+4.Select the RAG index (for example, rag-1785290794434).
+
+
+5.Open Search Explorer.
+
+
+6.Switch to JSON view.
+
+
+
+
+3. Test 1 - Keyword / BM25 Retrieval
+
+Start with this representative question:
+
+What is the corporate remote work policy?
+
+Use a standard text search request:
+
+{ 
+"search": "What is the corporate remote work policy?",
+
+
+ "select": "title,chunk,parent_id", 
+"top": 5}
+
+Expected result: remote-work-policy.pdf should rank at or very near the top. The indexed remote-
+work policy contains eligibility, manager approval, MFA, VPN/zero-trust access, device 
+requirements, work environment expectations, equipment support, data handling, and policy-
+violation guidance.
+
+4. Test 2 - Vector Retrieval
+
+The supplied result data shows that the index contains a populated text_vector field. If an Azure AI 
+Search vectorizer is configured for that field, Search Explorer can vectorize the natural-language 
+question at query time.
+
+{ 
+"vectorQueries": [ 
+{ 
+"kind": "text", 
+"text": "What is the corporate remote work policy?", 
+"fields": "text_vector", 
+"k": 5 
+} 
+], 
+"select": "title,chunk,parent_id", 
+"top": 5}
+
+Important: when query-time integrated vectorization is configured, you do not manually paste the 
+full numeric embedding into the request. The service converts the question to a vector.
+
+5. Test 3 - Hybrid Retrieval
+
+Hybrid search combines lexical/BM25 retrieval with vector similarity. The two result sets are 
+merged into a single ranking, allowing exact terminology and semantic similarity to complement 
+each other.
+
+{ 
+"search": "What is the corporate remote work policy?", 
+"vectorQueries": [ 
+{ 
+"kind": "text", 
+"text": "What is the corporate remote work policy?", 
+"fields": "text_vector", 
+"k": 50 
+} 
+], 
+"select": "title,chunk,parent_id",
+
+
+ "top": 5}
+
+User Question -> BM25 + Vector Search -> Combined Ranking -> Top Policy Chunks
+
+6. Test 4 - Hybrid + Semantic Ranker
+
+This is the recommended final retrieval configuration for the RAG architecture if Semantic Ranker is 
+enabled.
+
+{ 
+"search": "What is the corporate remote work policy?", 
+"vectorQueries": [ 
+{ 
+"kind": "text", 
+"text": "What is the corporate remote work policy?", 
+"fields": "text_vector", 
+"k": 50 
+} 
+], 
+"queryType": "semantic", 
+"semanticConfiguration": "YOUR-SEMANTIC-CONFIGURATION-NAME", 
+"captions": "extractive", 
+"answers": "extractive", 
+"select": "title,chunk,parent_id", 
+"top": 5}
+
+Replace YOUR-SEMANTIC-CONFIGURATION-NAME with the semantic configuration defined for the 
+index.
+
+7. Run the Four Representative Policy Questions
+
+Remote work
+
+Question: What is the corporate remote work policy?
+
+Expected primary source: remote-work-policy.pdf
+
+The remote-work policy should be the primary result.
+
+Password changes
+
+Question: How frequently do employees need to change passwords?
+
+Expected primary source: password-reset-guide.txt
+
+
+The source content describes expired passwords, prompted changes, and immediate change after 
+suspected exposure. It does not establish a fixed periodic interval in the supplied content; the system 
+should not invent one.
+
+Incident escalation
+
+Question: What is the incident escalation procedure?
+
+Expected primary source: incident-management-process
+
+The incident-management source should rank highly, and the returned chunk should contain actual 
+escalation guidance, not merely the title or introduction.
+
+Cloud costs
+
+Question: What policies apply to cloud costs?
+
+Expected primary source: cloud-cost-policy.pdf
+
+The cloud-cost policy should rank first or very near first because it covers ownership, tags, budgets, 
+alerts, provisioning, optimization, rightsizing, and enforcement.
+
+8. Do Not Judge Hybrid Search Only by @search.score
+
+Hybrid ranking scores do not behave like a simple cosine-similarity percentage. Focus on whether 
+the correct documents and chunks are ranked at the top. When Semantic Ranker is enabled, also 
+review @search.rerankerScore, captions, and answers.
+
+9. Record the Ranking Results
+
+Record the rank of the expected document for each retrieval method. This demonstrates whether 
+hybrid retrieval actually improves or preserves relevance.
+
+Query
+
+Keyword
+
+Vector
+
+Hybrid
+
+Hybrid + 
+Semantic
+
+Remote work
+
+Record rank
+
+Record rank
+
+Record rank
+
+Record rank
+
+Password 
+frequency
+
+Record rank
+
+Record rank
+
+Record rank
+
+Record rank
+
+Incident 
+escalation
+
+Record rank
+
+Record rank
+
+Record rank
+
+Record rank
+
+Cloud costs
+
+Record rank
+
+Record rank
+
+Record rank
+
+Record rank
+
+
+
+Use values such as #1, #2, #3, or Not found.
+
+10. Add Paraphrase Tests
+
+Do not test only the exact policy titles. Paraphrased questions are important because they show 
+whether vector retrieval is finding conceptually related content.
+
+
+Remote work: Can I work from home and what security rules do I have to follow?
+
+
+Incident escalation: Who should I contact when a serious production issue gets worse?
+
+
+Cloud costs: What are the rules for controlling Azure and cloud spending?
+
+
+
+
+11. What the Current Search Output Already Confirms
+
+Documents are indexed.
+
+
+Chunk text is populated.
+
+
+Vector embeddings are populated in text_vector.
+
+
+Source metadata such as chunk_id, parent_id, and title is present.
+
+
+Semantic-ranking output appears to be present, including reranker scores, captions, and 
+answers.
+
+
+
+
+Therefore, the next phase is retrieval-quality validation rather than additional indexing work.
+
+12. Recommended Test Sequence
+
+7.Run the remote-work question with keyword/BM25 retrieval.
+
+
+8.Run the same question with vector retrieval.
+
+
+9.Run the same question with hybrid retrieval.
+
+
+10.Run the same question with hybrid + Semantic Ranker.
+
+
+11.Compare the top documents and chunks.
+
+
+12.Repeat for password, incident escalation, and cloud-cost questions.
+
+
+13.Repeat again using paraphrased questions.
+
+
+14.Record rank positions and note any irrelevant chunks.
+
+
+15.Once the results are consistently relevant, use the hybrid configuration in the RAG application's 
+retrieval layer.
+
+
+
+
+13. Completion Criteria
+
+Consider the Test Vector and Hybrid Retrieval phase complete when the expected source 
+consistently appears near the top for both exact and paraphrased questions, the returned chunk 
+contains enough relevant context for the LLM, and the retrieval layer does not fabricate answers for 
+information absent from the indexed policies.
+
+Reference Notes
+
+The supplied Azure AI Search output included five returned results, populated text_vector values, 
+source metadata, semantic captions/answers, and reranker scores. These observations were used to 
+tailor the validation guidance.
+
+

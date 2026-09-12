@@ -1,0 +1,4 @@
+SELECT *
+FROM c
+WHERE c.conversationId = "11decac7-837f-4bc5-94e3-2df389e97c3b"
+ORDER BY c.createdAt

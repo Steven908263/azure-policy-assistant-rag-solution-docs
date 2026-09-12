@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="aBrZ-Y8NudnYny4QkO3o">
+    <mxGraphModel dx="946" dy="774" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Start" vertex="1">
+          <mxGeometry height="80" width="120" x="223" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=23;labelBackgroundColor=none;" value="&amp;nbsp;Policy Assistant - Azure Function App - LLM Query &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Process&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="900" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&amp;nbsp;Receive AI Search Query Response" vertex="1">
+          <mxGeometry height="60" width="120" x="223" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Create LLM Query Request using AI Search Query Reqponse and Original Chat Query" vertex="1">
+          <mxGeometry height="70" width="151" x="210" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-6" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="453" y="170" as="sourcePoint" />
+            <mxPoint x="503" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-7" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-4" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.522;exitY=1.103;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="423" y="250" as="sourcePoint" />
+            <mxPoint x="473" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Send LLM Query Request to LLM" vertex="1">
+          <mxGeometry height="60" width="120" x="224" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Receive LLM Query Response" vertex="1">
+          <mxGeometry height="60" width="120" x="223" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Create Chat Query Response using LLM Query Response and Conversation ID" vertex="1">
+          <mxGeometry height="60" width="120" x="223" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Send Chat Query Response to Chat Policy Application" vertex="1">
+          <mxGeometry height="60" width="120" x="223" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="End" vertex="1">
+          <mxGeometry height="80" width="120" x="223" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-15" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-5" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="390" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-16" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-8" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="480" as="sourcePoint" />
+            <mxPoint x="500" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-17" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-9" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="570" as="sourcePoint" />
+            <mxPoint x="480" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-18" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-10" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="670" as="sourcePoint" />
+            <mxPoint x="450" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TNlrN1jTRYNs6bw1IDPr-19" edge="1" parent="1" source="TNlrN1jTRYNs6bw1IDPr-11" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="TNlrN1jTRYNs6bw1IDPr-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="750" as="sourcePoint" />
+            <mxPoint x="430" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,162 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="2">
+  <diagram name="Component Assessment" id="G3tt2gl_Ne2xpt792CKY">
+    <mxGraphModel dx="1185" dy="774" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="u68Igg3GczcviltyLG-J-0" />
+        <mxCell id="u68Igg3GczcviltyLG-J-1" parent="u68Igg3GczcviltyLG-J-0" />
+        <mxCell id="u68Igg3GczcviltyLG-J-2" parent="u68Igg3GczcviltyLG-J-1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="560" width="660" x="376" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-3" parent="u68Igg3GczcviltyLG-J-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontStyle=2;verticalAlign=top;align=left;" value="&amp;nbsp; Chat H&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;istory Win&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dow&lt;/span&gt;" vertex="1">
+          <mxGeometry height="370" width="565" x="421" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-4" parent="u68Igg3GczcviltyLG-J-1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=15;fontStyle=2" value="&amp;nbsp; Policy Chat Query Textbox - (Enter chat query here...)" vertex="1">
+          <mxGeometry height="60" width="565" x="421" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-5" parent="u68Igg3GczcviltyLG-J-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" value="Send&amp;nbsp;&lt;div&gt;Chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="823" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-6" parent="u68Igg3GczcviltyLG-J-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" value="Corporate Employee" vertex="1">
+          <mxGeometry height="80" width="70" x="232" y="529" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-7" parent="u68Igg3GczcviltyLG-J-1" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=16;align=left;verticalAlign=top;" value="&lt;b&gt;&amp;nbsp;Chat Query Request:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;What Cloud costs should I be&amp;nbsp; &amp;nbsp;monitoring?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="250" x="716" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-8" parent="u68Igg3GczcviltyLG-J-1" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;verticalAlign=top;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;Chat Query Response:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;You should be managing your cloud&amp;nbsp; &amp;nbsp;storage, AI services, API services, and&amp;nbsp; &amp;nbsp;Data Loging services as they have tendonsy to rise very quickly.&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="290" x="456" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-9" edge="1" parent="u68Igg3GczcviltyLG-J-1" source="u68Igg3GczcviltyLG-J-6" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="u68Igg3GczcviltyLG-J-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="262" y="570" as="sourcePoint" />
+            <mxPoint x="312" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-10" edge="1" parent="u68Igg3GczcviltyLG-J-1" source="u68Igg3GczcviltyLG-J-11" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="312" y="240" as="sourcePoint" />
+            <mxPoint x="422" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-11" parent="u68Igg3GczcviltyLG-J-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;CHAT HISTORY WINDOW COMPONENT&lt;/b&gt;&lt;br&gt;&lt;div&gt;The &lt;u&gt;Chat History Window&lt;/u&gt; needs STATE because it changes everytime an employee submits a new chat query request and the values can&#39;t be recalculated&lt;/div&gt;&lt;div&gt;(i.e. &lt;b&gt;Query Request&lt;/b&gt; &amp;amp; &lt;b&gt;Query Response&lt;/b&gt; data)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="178.75" width="230" x="50" y="151.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-12" parent="u68Igg3GczcviltyLG-J-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;CHAT QUERY PROMPT&lt;/b&gt;&lt;div&gt;&lt;b&gt;COMPONENT&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The &lt;u&gt;Chat Query&amp;nbsp;Textbox&lt;/u&gt;&amp;nbsp;input value needs STATE because the text input changes everytime a user submits/sends a new query request and the value can&#39;t be recalculated.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(i.e. &lt;b&gt;Chat Query Request&lt;/b&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="247" x="432" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-13" edge="1" parent="u68Igg3GczcviltyLG-J-1" source="u68Igg3GczcviltyLG-J-12" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.506;exitY=-0.062;exitDx=0;exitDy=0;exitPerimeter=0;" target="u68Igg3GczcviltyLG-J-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="652" y="680" as="sourcePoint" />
+            <mxPoint x="702" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-14" parent="u68Igg3GczcviltyLG-J-1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;CORP POLICY ASSISTANT WINDOW&lt;/b&gt;&lt;div&gt;&lt;b&gt;COMPONENT&lt;br&gt;&lt;/b&gt;&lt;div&gt;I recomend the &lt;u style=&quot;&quot;&gt;Chat History Window&lt;/u&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;and the &lt;u&gt;Chat Query&amp;nbsp;&lt;/u&gt;&lt;u style=&quot;&quot;&gt;Textbox&lt;/u&gt;&amp;nbsp;STATE values should be implemented/live in the &lt;b&gt;&lt;i&gt;Corp Policy Assistant Window&lt;/i&gt;&lt;/b&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;component&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;because the it is the parent to both the Chat History and Chat Query components&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(i.e. &lt;b&gt;Pass data downward concept/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;One-way dataflow&lt;/b&gt;)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="218.59" width="332" x="1159" y="227.13" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-15" edge="1" parent="u68Igg3GczcviltyLG-J-1" source="u68Igg3GczcviltyLG-J-14" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" target="u68Igg3GczcviltyLG-J-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1122" y="190" as="sourcePoint" />
+            <mxPoint x="1172" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-16" parent="u68Igg3GczcviltyLG-J-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Citations" vertex="1">
+          <mxGeometry height="33" width="109" x="512" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-17" parent="u68Igg3GczcviltyLG-J-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Conversation ID" vertex="1">
+          <mxGeometry height="33" width="109" x="850" y="230.13" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-18" parent="u68Igg3GczcviltyLG-J-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Conversation ID" vertex="1">
+          <mxGeometry height="33" width="109" x="630" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-19" parent="u68Igg3GczcviltyLG-J-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="707" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-20" parent="u68Igg3GczcviltyLG-J-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=15;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;Corporate Policy Assistant Window&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="432" x="390" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="u68Igg3GczcviltyLG-J-21" parent="u68Igg3GczcviltyLG-J-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" value="New&amp;nbsp;&lt;div&gt;Chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="908" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="State Assessment" id="e68TbKuiYcezh5IVWwzk">
+    <mxGraphModel dx="1693" dy="1106" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-13" parent="1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="560" width="660" x="376" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontStyle=2;verticalAlign=top;align=left;" value="&amp;nbsp; Chat H&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;istory Win&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dow&lt;/span&gt;" vertex="1">
+          <mxGeometry height="370" width="565" x="421" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontSize=15;fontStyle=2" value="&amp;nbsp; Policy Chat Query Textbox - (Enter chat query here...)" vertex="1">
+          <mxGeometry height="60" width="565" x="421" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" value="Send&amp;nbsp;&lt;div&gt;Chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="823" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-22" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" value="Corporate Employee" vertex="1">
+          <mxGeometry height="80" width="70" x="232" y="529" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-23" parent="1" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=16;align=left;verticalAlign=top;" value="&lt;b&gt;&amp;nbsp;Chat Query Request:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;What Cloud costs should I be&amp;nbsp; &amp;nbsp;monitoring?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="250" x="716" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-24" parent="1" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;verticalAlign=top;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;Chat Query Response:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;You should be managing your cloud&amp;nbsp; &amp;nbsp;storage, AI services, API services, and&amp;nbsp; &amp;nbsp;Data Loging services as they have tendonsy to rise very quickly.&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="290" x="456" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="VeY6uLLxwBZbvCHsOeun-25" edge="1" parent="1" source="VeY6uLLxwBZbvCHsOeun-22" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" target="VeY6uLLxwBZbvCHsOeun-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="262" y="570" as="sourcePoint" />
+            <mxPoint x="312" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wKxgdBopbrqXrrArX8rJ-3" edge="1" parent="1" source="wKxgdBopbrqXrrArX8rJ-4" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="312" y="240" as="sourcePoint" />
+            <mxPoint x="422" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wKxgdBopbrqXrrArX8rJ-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;STATE ASSESSMENT&lt;/b&gt;&lt;div&gt;The &lt;u&gt;Chat History Window&lt;/u&gt; needs STATE because its value changes everytime an employee submits a new chat query request and the values can&#39;t be recalculated&lt;/div&gt;&lt;div&gt;(i.e. &lt;b&gt;Query Request&lt;/b&gt; &amp;amp; &lt;b&gt;Query Response&lt;/b&gt; data)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="178.75" width="230" x="50" y="151.25" as="geometry" />
+        </mxCell>
+        <mxCell id="wKxgdBopbrqXrrArX8rJ-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;STATE&amp;nbsp;&lt;/b&gt;&lt;b&gt;ASSESSMENT&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The &lt;u&gt;Chat Query&amp;nbsp;Textbox&lt;/u&gt;&amp;nbsp;input value needs STATE because the text input value changes everytime a user submits/sends a new chat query request and the value can&#39;t be recalculated.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(i.e. &lt;b&gt;Chat Query Request&lt;/b&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="247" x="432" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="wKxgdBopbrqXrrArX8rJ-6" edge="1" parent="1" source="wKxgdBopbrqXrrArX8rJ-5" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.506;exitY=-0.062;exitDx=0;exitDy=0;exitPerimeter=0;" target="VeY6uLLxwBZbvCHsOeun-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="652" y="680" as="sourcePoint" />
+            <mxPoint x="702" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7KdAepXZfEqV9lHbty4--1" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="&lt;b&gt;WHERE SHOULD STATE BE IMPLEMENTED?&lt;/b&gt;&lt;div&gt;I recomend implementing &lt;u style=&quot;&quot;&gt;Chat History Window&lt;/u&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;and &lt;u&gt;Chat Query&amp;nbsp;&lt;/u&gt;&lt;u style=&quot;&quot;&gt;Textbox&lt;/u&gt;&amp;nbsp;STATE in the &lt;b&gt;&lt;i&gt;Corp Policy Assistant Window&lt;/i&gt;&lt;/b&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;component&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;because it is the parent to both Chat History and Chat Query Textbox components&lt;/span&gt;&lt;/div&gt;&lt;div&gt;(i.e. &lt;b&gt;Pass data downward concept/&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;One-way dataflow&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="218.59" width="312" x="1159" y="227.13" as="geometry" />
+        </mxCell>
+        <mxCell id="7KdAepXZfEqV9lHbty4--2" edge="1" parent="1" source="7KdAepXZfEqV9lHbty4--1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" target="VeY6uLLxwBZbvCHsOeun-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1122" y="190" as="sourcePoint" />
+            <mxPoint x="1172" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tHOtvRGlywOfYc4nB_CR-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Citations" vertex="1">
+          <mxGeometry height="33" width="109" x="512" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="tHOtvRGlywOfYc4nB_CR-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Conversation ID" vertex="1">
+          <mxGeometry height="33" width="109" x="850" y="230.13" as="geometry" />
+        </mxCell>
+        <mxCell id="tHOtvRGlywOfYc4nB_CR-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Conversation ID" vertex="1">
+          <mxGeometry height="33" width="109" x="630" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="MfkwrdsLQk_-rZ22O5Kt-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="707" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="MfkwrdsLQk_-rZ22O5Kt-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=15;" value="&lt;span style=&quot;color: rgb(51, 51, 51);&quot;&gt;Corporate Policy Assistant Window&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="432" x="390" y="87" as="geometry" />
+        </mxCell>
+        <mxCell id="MfkwrdsLQk_-rZ22O5Kt-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1" value="New&amp;nbsp;&lt;div&gt;Chat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="84" x="908" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
