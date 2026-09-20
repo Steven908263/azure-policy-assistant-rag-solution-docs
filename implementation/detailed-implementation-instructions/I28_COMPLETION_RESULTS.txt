@@ -1,0 +1,87 @@
+I-28 Long-Term Memory Completion Results
+=======================================
+
+GeneratedAtUtc: 2026-09-17T01:38:48.010979+00:00
+RuntimeResultCount: 10
+
+Recorded Test Results
+---------------------
+Step 44 - Unit tests
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:34:56.589534+00:00
+Evidence:
+  - summary: 33 tests passed
+
+Step 45 - Cosmos integration tests
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:35:20.839720+00:00
+Evidence:
+  - summary: 5 tests passed
+
+Step 46 - Telemetry privacy
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:02.273653+00:00
+Evidence:
+  - summary: Memory creation telemetry contained identifiers and no memory text
+
+Step 47 - I-27 compatibility
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:16.437861+00:00
+Evidence:
+  - summary: Conversation history and incremental summarization remained functional after I-28
+
+Step 48 - I-31 compatibility
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:25.239057+00:00
+Evidence:
+  - summary: Long-term memory remained context only and did not override authorized Search evidence
+
+Step 30 - User isolation
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:38.323722+00:00
+Evidence:
+  - summary: Cross-user memory access was blocked
+
+Step 34 - Policy authority separation
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:46.759789+00:00
+Evidence:
+  - summary: Memory was context only and current policy wording came from authorized Search evidence
+
+Step 35 - Outdated memory handling
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:36:55.271277+00:00
+Evidence:
+  - summary: Current authorized Search evidence overrode stale memory
+
+Step 39 - Configured memory limits
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:37:17.133511+00:00
+Evidence:
+  - summary: Maximum length and confidence/importance thresholds enforced
+
+Step 37 - Authorization-data rejection
+Status: PASS
+RecordedAtUtc: 2026-09-17T01:37:24.990966+00:00
+Evidence:
+  - summary: Authorization data was rejected before persistence
+
+
+I-28 Completion Criteria
+------------------------
+[REQUIREMENT] Memories container created
+[REQUIREMENT] User-scoped schema implemented
+[REQUIREMENT] Compact memory creation implemented
+[REQUIREMENT] Source references stored
+[REQUIREMENT] Validation/deduplication implemented
+[REQUIREMENT] User isolation tested
+[REQUIREMENT] Cross-conversation persistence tested
+[REQUIREMENT] No raw-chat copying
+[REQUIREMENT] No policy-authority override
+[REQUIREMENT] Telemetry present and privacy validated
+
+Privacy Note
+------------
+This report intentionally excludes memory text, raw conversation text,
+policy evidence, secrets, tokens, authorization identifiers/filters,
+and other sensitive free-form content.
